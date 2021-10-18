@@ -14,7 +14,7 @@ export default {
     },
     "pokemon-rarity": "normal",
     "type": [
-      "grass",
+      "grass", 
       "poison"
     ],
     "encounter": {

@@ -1,99 +1,90 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/8cd635fca2.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8cd635fca2.js" crossorigin="anonymous"></script>
+  </head>
 
-<body>
-  <header class="título">
-    <h1 class="nossoLogo">PoKéHaLL</h1>
-    <img class="imgBola" src="image/pokebola.png" alt="Pokebola">
-  </header>
-
-  <nav class="flexPokemon">
-    <div class="searchPokemon">
-      <label for="" class="type-font">PESQUISAR POKÉMON</label>
-      <input type="text" id="search" placeholder="Encontre seu Pokémon" />
-    </div>
-
-    <div class="filterPokemon">
-      <label for="" class="type-font">FILTRAR</label>
-      <select name="" id="type">
-        <option value="" selected>--</option>
-        <option value="fire">Fire</option>
-        <option value="water">Water</option>
-        <option value="grass">Grass</option>
-        <option value="normal">Normal</option>
-        <option value="flying">Flying</option>
-        <option value="fighting">Fighting</option>
-        <option value="poison">Poison</option>
-        <option value="ground">Ground</option>
-        <option value="rock">Rock</option>
-        <option value="bug">Bug</option>
-        <option value="ghost">Ghost</option>
-        <option value="steel">Steel</option>
-        <option value="electric">Electric</option>
-        <option value="psychic">Psychic</option>
-        <option value="ice">Ice</option>
-        <option value="dragon">Dragon</option>
-        <option value="fairy">Fairy</option>
-        <option value="dark">Dark</option>
-      </select>
-    </div>
-
-    <div class="orderPokemon">
-      <label for="" class="type-font">ORDENAR</label>
-      <select name="" id="order">
-        <option value="" selected="selected">--</option>
-        <option value="name/asc">A-Z</option>
-        <option value="name/desc">Z-A</option>
-      </select>
-    </div>
-
-    <div class="homePokemon">
-      <button id="btnHome"><i class="fas fa-home"></i></button>
-    </div>
-  </nav>  
-
-  <section id="listaPokemon" aria-label="Card Pokémon" tabindex="0">
-    <section id="card" class="card">
-      <div class="titulos">
-        <p id="namePok"></p>
-        <p id="num"></p>
+  <body>
+    <header class="título">
+      <img class="nossoLogo" src="image/logoPokemon.png" alt="Logo">
+      <img class="imgBola" src="image/pokebola.png" alt="Pokebola">
+    </header>
+    <nav class="flexPokemon">
+      <div class="searchPokemon">
+        <label for="" class="type-font">PESQUISAR POKÉMON</label>
+        <input type="text" id="search" placeholder="Encontre seu Pokémon" />
       </div>
-      <img id="img">
-      <div class="tipos">
-        <p></p>
+      <div class="filterPokemon">
+        <label for="" class="type-font">FILTRAR</label>
+        <select name="" id="type">
+          <option value="" selected>--</option>
+          <option value="fire">Fire</option>
+          <option value="water">Water</option>
+          <option value="grass">Grass</option>
+          <option value="normal">Normal</option>
+          <option value="flying">Flying</option>
+          <option value="fighting">Fighting</option>
+          <option value="poison">Poison</option>
+          <option value="ground">Ground</option>
+          <option value="rock">Rock</option>
+          <option value="bug">Bug</option>
+          <option value="ghost">Ghost</option>
+          <option value="steel">Steel</option>
+          <option value="electric">Electric</option>
+          <option value="psychic">Psychic</option>
+          <option value="ice">Ice</option>
+          <option value="dragon">Dragon</option>
+          <option value="fairy">Fairy</option>
+          <option value="dark">Dark</option>
+        </select>
       </div>
-      <div class="indices">
-        <p></p>
-        <p></p>
-        <p></p>
+      <div class="orderPokemon">
+        <label for="" class="type-font">ORDENAR</label>
+        <select name="" id="order">
+          <option value="" selected="selected">--</option>
+          <option value="name/asc">A-Z</option>
+          <option value="name/desc">Z-A</option>
+        </select>
       </div>
-      <p></p>
+      <div class="refreshPokemon">
+        <button id="btnRefresh"><i class="fa fa-refresh"></i></button>
+      </div>
+    </nav>  
+    <section id="listaPokemon" aria-label="Card Pokémon" tabindex="0">
+      <section id="card" class="card">
+        <div class="titulos">
+          <p id="namePok"></p>
+          <p id="num"></p>
+        </div>
+        <img id="img">
+        <div class="tipos">
+          <p></p>
+        </div>
+        <div class="indices">
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <p></p>
+      </section>
     </section>
-  </section>
-
-  <div class="btnsMS">
-    <button id="btnShowMore">MOSTRAR MAIS</button>
-    <button id="btnShowAll">MOSTRAR TUDO</button>
-  </div>
-  <footer>
-    <span>Desenvolvido por <a href="https://github.com/AlineFAndrade" target="_black">Aline Andrade</a> e <a
-      href="https://github.com/Tauana-Pacheco" target="_blank">Tauana Pacheco</a> - 
-      <a href="https://www.laboratoria.la/br" target="_blank">Laboratória</a> 2021
-    </span>
-  </footer>
-
-  <script src="main.js" type="module"></script>
-
-</body>
-
+    <div class="btnsMS">
+      <button id="btnShowMore">MOSTRAR MAIS</button>
+      <button id="btnShowAll">MOSTRAR TUDO</button>
+    </div>
+    <footer>
+      <p>Desenvolvido por <a href="https://github.com/AlineFAndrade" target="_black">Aline Andrade</a> e <a
+        href="https://github.com/Tauana-Pacheco" target="_blank">Tauana Pacheco</a> - 
+        <a href="https://www.laboratoria.la/br" target="_blank">Laboratória</a> 2021
+      </p>
+    </footer>
+    <script src="main.js" type="module"></script>
+  </body>
 </html>

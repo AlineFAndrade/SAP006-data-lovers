@@ -22,6 +22,7 @@ function show(itens) {
           <img id = "img" src = "${pokemon.img}">
           <div class = "tipos">
             <p class= "types-pokemon"> ${pokemon.type[0]} </p>
+            <p>/</p>
             <p class= "types-pokemon type1"> ${pokemon.type[1]} </p>
           </div>
         </div>
@@ -37,14 +38,6 @@ function show(itens) {
     </section>`
     document.getElementById("listaPokemon").innerHTML += card
   }
-}
-const type1 = document.querySelector('.type1')
-const typeArray = pokemon.type
-console.log(pokemon)
-if(typeArray.length < 1){
-  
-  console.log(type1)
-  type1.style.visibility='hidden'
 }
 
 const type = document.getElementById('type');

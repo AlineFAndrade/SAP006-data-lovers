@@ -26,6 +26,11 @@ body {
 .imgBola {
   width: 20%;
   margin: 0 auto;
+  transition: 0.8s;
+}
+
+.imgBola:hover {
+  transform: rotate(350deg);
 }
 
 .flexPokemon {
